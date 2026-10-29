@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "equipment-booking"
+version = "0.1.0"
+description = "Shared equipment booking with conflict detection and ICS calendar export."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+equipment-booking = "equipment_booking.cli:main"
+
+[tool.setuptools]
+packages = ["equipment_booking"]
